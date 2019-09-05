@@ -24,6 +24,8 @@ Once the issue reappears and you want to stop traces you may need to manually ki
 
 #kill -i pid shown by above command for trace_cyclic
 
+Trace file names would be in formay yymmdd-hh:mm:ss that way you based on the time of repro of the issue you could guess which file may have traces form that time. 
+
 For example
 
 #ps -aef | grep -i trace

@@ -14,7 +14,7 @@ To use this Script you need to provide three parameters.
 
 If you want to take capture for 24 hours, rotate file every 5 minutes and keep trace files for last two hours use below command.
 
-#sudo ./trace_cyclic.sh -d 86400 -r 300 -f 120 > /dev/null 2>&1 &
+#sudo ./trace_cyclic0.01.sh -d 86400 -r 300 -f 120 > /dev/null 2>&1 &
 
 Script will create a folder in location from where you run it as capturedtraces
 

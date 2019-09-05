@@ -31,13 +31,11 @@ For example
 
 #ps -aef | grep -i trace
 
-root       694     1  0 Aug25 ?        00:00:00 /usr/bin/abrt-watch-log -F Backtrace /var/log/Xorg.0.log -- /usr/bin/abrt-dump-xorg -xD
-
 root     31340 30320  0 13:36 pts/2    00:00:00 sh -x trace_cyclic.sh -d 1440 -r 30 -f 10
 
 Then command to stop is 
 
-#kill -9 31340
+#sudo kill -9 31340
 
 To get this script use below command. 
 

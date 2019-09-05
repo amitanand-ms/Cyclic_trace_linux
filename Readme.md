@@ -46,4 +46,4 @@ To get this script use below command.
  
  It will be in folder Cyclic_trace_linux
 
-Trace file names would be in formay yymmdd-hh:mm:ss that way you based on the time of repro of the issue you could guess which file may have traces form that time. 
+Trace file names would be in format yymmdd-hh:mm:ss that way you based on the time of repro of the issue you could guess which file may have traces form that time. 

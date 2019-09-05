@@ -6,11 +6,11 @@ This program is designed to solve that purpose.
 
 To use this Script you need to provide three parameters. 
 
--d <Total duration to run in seconds>
+-d Total duration to run in seconds
 
--r <Trace file rotation time in seconds>
+-r Trace file rotation time in seconds
 
--f <Time duration for which you want to keep traces>
+-f Time duration in minutes for which you want to keep traces
 
 If you want to take capture for 24 hours, rotate file every 5 minutes and keep trace files for last two hours use below command.
 
@@ -22,8 +22,7 @@ Once the issue reappears and you want to stop traces you may need to manually ki
 
 #sudo ps -aef | grep -i trace_cyclic
 
-#kill -i <pid shown by above command for trace_cyclic>
-
+#kill -i pid shown by above command for trace_cyclic
 
 For example
 

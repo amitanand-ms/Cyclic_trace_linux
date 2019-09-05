@@ -14,6 +14,7 @@ To use this Script you need to provide three parameters.
 
 If you want to take capture for 24 hours, rotate file every 5 minutes and keep trace files for last two hours use below command.
 
+
 #sudo ./trace_cyclic0.01.sh -d 86400 -r 300 -f 120 > /dev/null 2>&1 &
 
 Script will create a folder in location from where you run it as capturedtraces
@@ -24,7 +25,7 @@ Once the issue reappears and you want to stop traces you may need to manually ki
 
 #kill -i pid shown by above command for trace_cyclic
 
-Trace file names would be in formay yymmdd-hh:mm:ss that way you based on the time of repro of the issue you could guess which file may have traces form that time. 
+
 
 For example
 
@@ -38,3 +39,10 @@ Then command to stop is
 
 #kill -9 31340
 
+To get this script use below command. 
+
+ #git clone https://github.com/amitanand-ms/Cyclic_trace_linux.git
+ 
+ It will be in folder Cyclic_trace_linux
+
+Trace file names would be in formay yymmdd-hh:mm:ss that way you based on the time of repro of the issue you could guess which file may have traces form that time. 

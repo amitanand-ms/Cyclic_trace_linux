@@ -6,7 +6,7 @@ This program is designed to solve that purpose.
 
 To use this Script you need to provide three parameters. 
 
--d Total duration to run in seconds
+-d Total duration to run traces in seconds
 
 -r Trace file rotation time in seconds
 

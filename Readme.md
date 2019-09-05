@@ -12,8 +12,11 @@ To use this Script you need to provide three parameters.
 
 -f Time duration in minutes for which you want to keep traces
 
-If you want to take capture for 24 hours, rotate file every 5 minutes and keep trace files for last two hours use below command.
+And need to give it Executable permissions.
 
+#sudo chmod +x /trace_cyclic0.01.sh
+
+If you want to take capture for 24 hours, rotate file every 5 minutes and keep trace files for last two hours use below command.
 
 #sudo ./trace_cyclic0.01.sh -d 86400 -r 300 -f 120 > /dev/null 2>&1 &
 

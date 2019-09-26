@@ -2,9 +2,7 @@ Watcher is develpoed to keep on monitoring a particular log file and take action
 
 By default check interval for triger in log file is 60 seconds, although with optional flag -ci this could be reduced or increased. This is the time frequency for watcher to go to log file and check for trigger. 
 
-Imp: - Its required to purge the log file before starting watcher as it would monitor log file from the beigning. 
-
-This works as watcher to trace_cyclic to start and / OR stop based on logs monitoring
+Imp: - Its required to purge the log file before starting watcher as it would monitor log file from the beigning of file. 
 
 For start operation.
 
@@ -12,7 +10,7 @@ Need input as -d duration to run in seconds
 
 Need input for -r rotation period in seconds to rotate file
 
-Need input in -f min  for file feeping period.
+Need input in -f min  for file keeping period.
 
 Need to set flag -w start for start operation
 

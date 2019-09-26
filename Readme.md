@@ -49,4 +49,5 @@ To get this script use below command.
 Trace file names would be in format yymmdd-hh:mm:ss that way you based on the time of repro of the issue you could guess which file may have traces form that time. 
 
 
+Traces run and stop could be automate using watcher, please go through watcher_readme file to understand how you could leverage watcher to trigger trace capture through logs occurence. 
 

@@ -21,7 +21,7 @@ Need input in -s string to monitor in file
 optional input for check interval, by default it's 60 seconds but you could reset it using ci flag
 e.g if you want to start watcher to monitor /var/log/app.log for string "start the traces" and start capture for 24  hours file rotation 300sec and file retention for 120 mins.
 ./watcher_trace.sh -w start -F /var/log/app.log -s "start the traces" -d 8400 -r 300 -f 120 2>&1 &
-Note: - String "start the traces" needs to be replace with actual log string you may wist to trigger trace start. And in -F give path to actual log file you want to monitor. 
+Note: - String "start the traces" needs to be replace with actual log string you may wish to trigger trace start. And in -F give path to actual log file you want to monitor. 
 
 As shared above, by Default the check interval is 60 seconds which means it will check for string condition in log file after every 60 seconds.
 

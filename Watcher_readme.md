@@ -46,6 +46,6 @@ Note: - Make sure that cyclic traces are already running otherwise watcher will 
 
 ./watcher_trace.sh -w stop -F /var/log/app.log -s "stop the traces"
 
-Note: - String "stop the traces" needs to be replace with actual log string you may wist to trigger trace start. And in -F give path to actual log file you want to monitor
+Note: - String "stop the traces" needs to be replace with actual log string you may wish to trigger trace stop. And in -F give path to actual log file you want to monitor
 
--ci flag also works in stop mode. So if you may want watcher to check log with higher frequency than 60 seocnds then you could specify that with -ci operation.
+-ci flag also works in stop mode. So if you may want watcher to check log with higher frequency than 60 seconds then you could specify that with -ci operation.

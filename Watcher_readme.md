@@ -1,8 +1,8 @@
-Watcher is develpoed to keep on monitoring a particular log file and take action to start or stop traces when issue triggers or gets away. To reduce human intervention for starting and stoping traces. 
+Watcher is developed to keep on monitoring a particular log file and take action to start or stop traces when issue triggers or gets away. To reduce human intervention for starting and stoping traces. 
 
 By default check interval for triger in log file is 60 seconds, although with optional flag -ci this could be reduced or increased. This is the time frequency for watcher to go to log file and check for trigger. 
 
-Imp: - Its required to purge the log file before starting watcher as it would monitor log file from the beigning of file. 
+Imp: - Its required to purge the log file before starting watcher as it would monitor log file from the  beginning  of file. 
 
 For start operation.
 

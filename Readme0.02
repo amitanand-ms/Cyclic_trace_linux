@@ -1,0 +1,60 @@
+Enhancements in 0.02 version
+	Ability to apply filters
+	Help option as -h to display help for running script
+	Zip option instead of purge to just zip files instead of deleting.
+-d Total duration to run traces in seconds
+-r Trace file rotation time in seconds
+-f Time duration in minutes for which you want to keep traces
+-z  1 or 0 for enable or disable
+-F Filter for TCPdump
+** While giving filter make sure filter is correct as per tcpdump format
+** Zip options keep on zipping files older than twice of rotation time, if zip option is enabled purge duration given by -f is optional.
+---------------------------------------------------------------------------------------------------------------------------------------------
+To Start Capture
+
+Give it Executable permissions.
+
+#sudo chmod +x /trace_cyclic0.02.sh
+
+If you want to take capture for 24 hours, rotate file every 5 minutes and keep trace files for last two hours use below command.
+
+#sudo ./trace_cyclic0.02.sh -d 86400 -r 300 -f 120 > /dev/null 2>&1 &
+
+Script will create a folder in location from where you run it as capturedtraces
+
+To run with Filter 
+
+#sudo ./trace_cyclic0.02.sh -d 86400 -r 300 -f 120 -F “port 443” > /dev/null 2>&1 &
+
+To run with Zip option enabled.
+
+#sudo ./trace_cyclic0.02.sh -d 86400 -r 300 -z 1 -F "port 22" > /dev/null 2>&1 &
+
+Once the issue reappears and you want to stop traces you may need to manually kill the script.
+
+#sudo ps -aef | grep -i trace_cyclic
+
+#kill -i pid shown by above command for trace_cyclic
+
+For example
+
+#ps -aef | grep -i trace
+
+root 31340 30320 0 13:36 pts/2 00:00:00 sh -x trace_cyclic0.02.sh -d 1440 -r 30 -f 10
+
+Then command to stop is
+
+#sudo kill -9 31340
+
+To get this script use below command.
+
+#git clone https://github.com/amitanand-ms/Cyclic_trace_linux.git
+
+It will be in folder Cyclic_trace_linux
+
+Trace file names would be in format yymmdd-hh:mm:ss that way you based on the time of repro of the issue you could guess which file may have traces form that time.
+Traces run and stop could be automate using watcher, please go through watcher_readme file to understand how you could leverage watcher to trigger trace capture through logs occurrence.
+
+***Watcher may not work with 0.02 for now
+
+

@@ -1,7 +1,7 @@
 Enhancements in 0.02 version
 	Ability to apply filters
 	Help option as -h to display help for running script
-	Zip option instead of purge to just zip files instead of deleting.
+	Zip option instead of purge to just zip files instead of deleting or use in combination with purging.
 -d Total duration to run traces in seconds
 -r Trace file rotation time in seconds
 -f Time duration in minutes for which you want to keep traces
